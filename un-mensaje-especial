@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un mensaje especial ✨</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(135deg, #180a29, #38124d, #1a0826);
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      overflow-x: hidden;
+      position: relative;
+    }
+    /* Animación de corazones en segundo plano */
+    .heart-bg {
+      position: absolute;
+      font-size: 1.5rem;
+      opacity: 0.25;
+      animation: float 6s ease-in-out infinite;
+      user-select: none;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-25px) rotate(15deg); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      max-width: 580px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 105, 180, 0.2);
+      border: 1px solid rgba(255, 192, 203, 0.25);
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+    h1 {
+      color: #ff79c6;
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-shadow: 0 0 12px rgba(255, 121, 198, 0.6);
+    }
+    p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      color: #f8f8f2;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .highlight {
+      color: #ffb86c;
+      font-weight: 600;
+    }
+    .disculpa {
+      background: rgba(255, 184, 108, 0.12);
+      border-left: 4px solid #ffb86c;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 1.25em;
+      font-weight: bold;
+      color: #8be9fd;
+      text-shadow: 0 0 10px rgba(139, 233, 253, 0.4);
+    }
+    .hearts-row {
+      font-size: 1.8em;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Corazones flotantes de fondo -->
+  <div class="heart-bg" style="top: 10%; left: 15%; animation-delay: 0s;">💖</div>
+  <div class="heart-bg" style="top: 25%; right: 15%; animation-delay: 1.5s;">💕</div>
+  <div class="heart-bg" style="bottom: 15%; left: 20%; animation-delay: 3s;">💗</div>
+  <div class="heart-bg" style="bottom: 25%; right: 20%; animation-delay: 4.5s;">✨</div>
+
+  <div class="card">
+    <h1>¡Hola! ✨💖🌸</h1>
+    
+    <p>
+      Quería aprovechar para agradecerte de corazón por tus mensajes en mi cumpleaños. De verdad me pareció un <span class="highlight">detalle superlindo</span> que te acordaras de mí y me alegró bastante ver tus palabras 🥳🎉.
+    </p>
+
+    <div class="disculpa">
+      <p style="margin-bottom: 0;">
+        🙏 <i>También quería pedirte una disculpa si en algún momento mi actitud no ha sido la mejor o la más adecuada.</i>
+      </p>
+    </div>
+
+    <p>
+      Valoro mucho tus deseos y que hayas estado presente ese día celebrando conmigo a la distancia 💫.
+    </p>
+
+    <p class="footer">
+      ¡Gracias de nuevo y te mando un abrazo supergrande! 🤗🚀💖
